@@ -1,0 +1,27 @@
+{
+	"name": "prullenbak/laravel-tikkie",
+	"description": "Easily integrate PHPTikkie in your laravel app",
+	"authors": [
+		{
+			"name": "Jurgen van Veen",
+			"email": "jurgenvveen@gmail.com"
+		}
+	],
+	"autoload": {
+		"psr-4": { "Prullenbak\\LaravelTikkie\\" : "src/" }
+	},
+	"minimum-stability": "dev",
+	"require": {
+		"jarnovanleeuwen/php-tikkie": "^0.1.1"
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Prullenbak\\LaravelTikkie\\TikkieServiceProvider"
+			],
+			"aliases": {
+				"Tikkie": "Prullenbak\\LaravelTikkie\\Facade"
+			}
+		}
+	}
+}
